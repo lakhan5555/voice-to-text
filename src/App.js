@@ -64,9 +64,14 @@ function App() {
       <div className="container">
         <div className="box">
           <h2>Current Note</h2>
-          <button onClick={handleSaveNote} disabled={!note}>Save Note</button>
-          <button onClick={() => setIsListening(prevSatate => !prevSatate)}>Start/Stop</button>
-          <p>{note}</p>
+          <div>
+            <button onClick={() => setIsListening(prevSatate => !prevSatate)}>Start/Stop</button>
+            <button onClick={handleSaveNote} disabled={!note}>Save Note</button>
+          </div>
+          <br />
+          <div>
+            {note}
+          </div>
         </div> 
         <div className="box">
           <h2>Notes</h2>

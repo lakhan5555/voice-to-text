@@ -19,6 +19,10 @@ code {
   display: grid;
   grid-template-columns: 1fr;
 }
+
+.box p{
+  float: clear;
+}
 }
 
 @media screen and (min-width: 900px){
@@ -42,8 +46,8 @@ h1 {
 }
 
 button {
-  float: right;
-  margin: 10px;
+  /* float: right; */
+  margin-left: 30px;
   padding: 10px;
   border-radius: 5px;
   background: transparent;
